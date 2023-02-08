@@ -5,7 +5,7 @@
 
   position: relative;
 
-  transition: width .2s linear;
+  transition: width 0.2s linear;
 }
 
 .collapsed {
@@ -14,8 +14,13 @@
 
 .switchers {
   display: flex;
-  width: 100%;
+  flex-direction: column;
   justify-content: center;
+  gap: 15px;
+
+  width: 100%;
+
+  padding: 0 12px;
 
   position: absolute;
   bottom: 20px;

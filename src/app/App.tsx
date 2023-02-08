@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+
 import { classNames as cn } from "shared/lib";
 import { useTheme } from "app/providers/ThemeProvider";
 import { AppRouter } from "./providers/router";
@@ -12,10 +14,12 @@ const App = () => {
   return (
     <div className={cn("app", {}, [theme])}>
       <Navbar />
-      <div className="content-page">
-        <Sidebar />
-        <AppRouter />
-      </div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <div className="content-page">
+          <Sidebar />
+          <AppRouter />
+        </div>
+      </Suspense>
     </div>
   );
 };
