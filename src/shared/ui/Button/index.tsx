@@ -19,7 +19,8 @@ const Button: FC<ButtonProps> = (props) => {
 
   return (
     <button
-      className={cn(styles.Button, {}, [className, styles[theme]])}
+      type="button"
+      className={cn(styles.Button, {}, [className, styles[theme], "Some text"])}
       {...rest}
     >
       {children}

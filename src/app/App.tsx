@@ -2,9 +2,9 @@ import { Suspense } from "react";
 
 import { classNames as cn } from "shared/lib";
 import { useTheme } from "app/providers/ThemeProvider";
-import { AppRouter } from "./providers/router";
 import { Navbar } from "widgets/Navbar";
 import { Sidebar } from "widgets/Sidebar";
+import { AppRouter } from "./providers/router";
 
 import "./styles/index.scss";
 
