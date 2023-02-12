@@ -1,5 +1,4 @@
 import { Suspense } from "react";
-
 import { classNames as cn } from "shared/lib";
 import { useTheme } from "app/providers/ThemeProvider";
 import { Navbar } from "widgets/Navbar";
@@ -13,8 +12,8 @@ const App = () => {
 
   return (
     <div className={cn("app", {}, [theme])}>
-      <Navbar />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div>...</div>}>
+        <Navbar />
         <div className="content-page">
           <Sidebar />
           <AppRouter />

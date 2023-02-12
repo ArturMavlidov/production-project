@@ -16,7 +16,7 @@ const ThemeSwitcher: FC<ThemeSwitcherProps> = ({ className }) => {
 
   return (
     <Button
-      className={cn(styles.ThemeSwitcher, {}, [className])}
+      className={cn("", {}, [className])}
       onClick={toggleTheme}
     >
       <ThemeIcon className={styles.icon} />

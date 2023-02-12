@@ -5,8 +5,6 @@ import { classNames as cn } from "shared/lib";
 import { Button } from "shared/ui";
 import { ThemeButton } from "shared/ui/Button";
 
-import styles from "./styles.module.scss";
-
 interface LangSwitcherProps {
   className?: string;
 }
@@ -20,7 +18,7 @@ const LangSwitcher: FC<LangSwitcherProps> = ({ className }) => {
 
   return (
     <Button
-      className={cn(styles.LangSwitcher, {}, [className])}
+      className={cn("", {}, [className])}
       theme={ThemeButton.OUTLINE}
       onClick={toggleLanguage}
     >
