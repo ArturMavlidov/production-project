@@ -39,6 +39,7 @@ module.exports = {
     "import/no-extraneous-dependencies": "off",
     "no-underscore-dangle": "off",
     "arrow-body-style": "off",
+    "react/jsx-wrap-multilines": "off",
   },
   globals: {
     __IS_DEV__: true,
