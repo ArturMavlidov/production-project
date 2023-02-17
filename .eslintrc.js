@@ -41,6 +41,14 @@ module.exports = {
     "arrow-body-style": "off",
     "react/jsx-wrap-multilines": "off",
   },
+  overrides: [
+    {
+      files: ["**/src/**/*.test.{ts,tsx}"],
+      rules: {
+        "i18next/no-literal-string": "off",
+      },
+    },
+  ],
   globals: {
     __IS_DEV__: true,
   },
