@@ -22,11 +22,12 @@ const Sidebar: FC<SidebarProps> = ({ className }) => {
 
   return (
     <div
+      data-testid="sidebar"
       className={cn(styles.Sidebar, { [styles.collapsed]: collapsed }, [
         className,
       ])}
     >
-      <Button onClick={onToggle}>{t("Переключить")}</Button>
+      <Button data-testid="sidebar-toggle" onClick={onToggle}>{t("Переключить")}</Button>
       <div className={styles.switchers}>
         <ThemeSwitcher />
         <LangSwitcher />

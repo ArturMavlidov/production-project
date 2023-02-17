@@ -17,8 +17,8 @@ module.exports = {
   plugins: ["react", "@typescript-eslint", "i18next"],
   rules: {
     "i18next/no-literal-string": [
-      "error",
-      { markupOnly: true, ignoreAttribute: ["to"] },
+      "warn",
+      { markupOnly: true, ignoreAttribute: ["to", "data-testid"] },
     ],
     "object-curly-newline": "off",
     quotes: [1, "double"],
