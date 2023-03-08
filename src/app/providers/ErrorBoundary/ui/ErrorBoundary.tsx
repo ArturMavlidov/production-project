@@ -39,6 +39,7 @@ export class ErrorBoundary extends React.Component<
       );
     }
 
-    return children;
+    // eslint-disable-next-line
+    return <>{children}</>;
   }
 }

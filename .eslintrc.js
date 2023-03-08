@@ -40,6 +40,7 @@ module.exports = {
     "no-underscore-dangle": "off",
     "arrow-body-style": "off",
     "react/jsx-wrap-multilines": "off",
+    "implicit-arrow-linebreak": "off",
   },
   overrides: [
     {
